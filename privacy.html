@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — TaxSet</title>
+    <meta
+      name="description"
+      content="TaxSet is a local-only quarterly tax set-aside estimator. It has no accounts, no analytics and no ads, and your financial data never leaves your device." />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #fffdfc;
+        --surface: #fff;
+        --border: #efe3dc;
+        --text: #241813;
+        --muted: #6d5a51;
+        --faint: #9a877d;
+        --accent: #c4663c;
+        --accent-deep: #8f4526;
+        --accent-wash: #fdf3ee;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #140f0c;
+          --surface: #1d1613;
+          --border: #33251f;
+          --text: #f6efea;
+          --muted: #bda79c;
+          --faint: #8d786d;
+          --accent: #d9825c;
+          --accent-deep: #f5c4ab;
+          --accent-wash: #241a15;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0 20px 96px;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.65 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      main {
+        max-width: 680px;
+        margin: 0 auto;
+      }
+      header {
+        padding: 64px 0 40px;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 40px;
+      }
+      .eyebrow {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 14px;
+      }
+      h1 {
+        font-size: clamp(30px, 6vw, 40px);
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        margin: 0 0 14px;
+      }
+      .updated {
+        margin: 0;
+        font-size: 14px;
+        color: var(--faint);
+      }
+      h2 {
+        font-size: 19px;
+        letter-spacing: -0.01em;
+        margin: 40px 0 12px;
+      }
+      p,
+      li {
+        color: var(--muted);
+      }
+      p {
+        margin: 0 0 14px;
+      }
+      ul {
+        margin: 0 0 14px;
+        padding-left: 22px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      strong {
+        color: var(--text);
+        font-weight: 650;
+      }
+      a {
+        color: var(--accent-deep);
+        text-underline-offset: 2px;
+      }
+      .callout {
+        background: var(--accent-wash);
+        border: 1px solid var(--border);
+        border-left: 3px solid var(--accent);
+        border-radius: 12px;
+        padding: 18px 20px;
+        margin: 0 0 14px;
+      }
+      .callout p:last-child {
+        margin-bottom: 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 0 14px;
+        font-size: 15px;
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 11px 12px;
+        border-bottom: 1px solid var(--border);
+        color: var(--muted);
+      }
+      th {
+        color: var(--text);
+        font-weight: 650;
+        font-size: 13px;
+        letter-spacing: 0.02em;
+      }
+      .wrap {
+        overflow-x: auto;
+      }
+      footer {
+        margin-top: 56px;
+        padding-top: 28px;
+        border-top: 1px solid var(--border);
+        font-size: 14px;
+        color: var(--faint);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">TaxSet</p>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated 28 August 2026</p>
+      </header>
+
+      <div class="callout">
+        <p>
+          <strong>TaxSet does not collect your financial data. There is no server to send it to.</strong>
+          Everything you type stays in a database inside the app's own private storage on your
+          device. There are no accounts, no sign-in, no analytics, no advertising, no trackers, and
+          no bank connections.
+        </p>
+      </div>
+
+      <h2>What stays on your device</h2>
+      <p>
+        Every figure you enter — income, expenses, categories, notes, dates, your tax rate, your
+        quarterly goal and your appearance settings — is written to a local SQLite database
+        (<code>taxset.db</code>) in the app's sandbox. It is never uploaded, synced, backed up to us,
+        or shared with anyone. We cannot see it, because it never reaches us.
+      </p>
+      <p>
+        The app does not ask for any device permissions beyond the private storage every app is
+        given for its own files. It does not request access to your contacts, camera, photos,
+        location, or health data.
+      </p>
+
+      <h2>What leaves your device, and only when you choose</h2>
+      <div class="wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Action</th>
+              <th>What is sent</th>
+              <th>Where it goes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Sending feedback</strong><br />Settings → Send feedback</td>
+              <td>
+                Your message, the category you picked, your email address if you choose to give one,
+                and the app and OS version. <strong>No transaction data is ever attached.</strong>
+              </td>
+              <td>
+                <a href="https://formspree.io/legal/privacy-policy/" rel="noopener">Formspree</a>,
+                which forwards it to the developer by email
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Exporting your data</strong><br />Settings → Export</td>
+              <td>A CSV or JSON file of your transactions, written to the app cache</td>
+              <td>Wherever you send it via the system share sheet — entirely your choice</td>
+            </tr>
+            <tr>
+              <td><strong>Leaving a tip</strong><br />Settings → Support TaxSet</td>
+              <td>Nothing from TaxSet. The purchase is handled entirely by the store.</td>
+              <td>Apple App Store or Google Play</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Sending feedback is the only network request TaxSet makes. Nothing else in the app contacts
+        the internet — not on launch, not in the background, not ever.
+      </p>
+
+      <h2>Tips and in-app purchases</h2>
+      <p>
+        TaxSet is free. Every calculation, screen, export and all six main themes are free forever.
+        The optional Tip Jar unlocks decoration only — extra themes, progress ring styles and
+        badges.
+      </p>
+      <p>
+        Purchases are processed by <strong>Apple</strong> or <strong>Google</strong> under their own
+        privacy policies. TaxSet never sees or stores your name, payment details, billing address or
+        store account. All the app keeps is a single local flag recording which tier you unlocked,
+        stored on your device alongside everything else. There is no receipt-validation server and
+        no purchase history is transmitted to us.
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        TaxSet is a tool for self-employed adults managing their own tax set-aside. It is not
+        directed at children, and because it collects no personal information it does not knowingly
+        collect anything from anyone of any age.
+      </p>
+
+      <h2>Deleting your data</h2>
+      <ul>
+        <li>
+          <strong>Settings → Your data → Delete all data</strong> wipes every transaction and resets
+          every setting immediately and irreversibly.
+        </li>
+        <li>
+          <strong>Deleting the app</strong> removes the database with it. Nothing survives
+          elsewhere, because nothing was ever stored elsewhere.
+        </li>
+        <li>
+          A tip you have already paid for is not revoked by deleting your data. You can bring it
+          back with <strong>Restore</strong> in the Tip Jar.
+        </li>
+        <li>
+          To have a feedback message you sent deleted, contact us and it will be removed from the
+          developer's inbox.
+        </li>
+      </ul>
+
+      <h2>Your rights</h2>
+      <p>
+        Rights such as access, correction, portability and erasure under the GDPR, the UK GDPR, the
+        CCPA and similar laws all attach to data held by us. TaxSet holds none: your financial
+        records are in your hands the whole time, exportable at any moment and deletable in one tap.
+        The single exception is a feedback message you chose to send, which you can ask us to
+        delete. <strong>We have never sold or shared personal information, and never will.</strong>
+      </p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        If this policy changes, the date at the top changes with it, and any change that affects
+        what leaves your device will be called out in the app's release notes.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Use <strong>Settings → Send feedback</strong> inside the app. It reaches the developer
+        directly, and never attaches any of your financial data — only your message, the category
+        you picked, an optional reply address, and the app and OS version.
+      </p>
+
+      <footer>
+        <p>
+          TaxSet is an estimator, not tax advice. See the
+          <a href="./support.html">support page</a> for what that means.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

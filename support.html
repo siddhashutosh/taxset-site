@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support — TaxSet</title>
+    <meta
+      name="description"
+      content="Help, answers and contact for TaxSet — the private, local-only quarterly tax set-aside estimator." />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #fffdfc;
+        --surface: #fff;
+        --border: #efe3dc;
+        --text: #241813;
+        --muted: #6d5a51;
+        --faint: #9a877d;
+        --accent: #c4663c;
+        --accent-deep: #8f4526;
+        --accent-wash: #fdf3ee;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #140f0c;
+          --surface: #1d1613;
+          --border: #33251f;
+          --text: #f6efea;
+          --muted: #bda79c;
+          --faint: #8d786d;
+          --accent: #d9825c;
+          --accent-deep: #f5c4ab;
+          --accent-wash: #241a15;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0 20px 96px;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.65 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      main {
+        max-width: 680px;
+        margin: 0 auto;
+      }
+      header {
+        padding: 64px 0 40px;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 40px;
+      }
+      .eyebrow {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 14px;
+      }
+      h1 {
+        font-size: clamp(30px, 6vw, 40px);
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        margin: 0 0 14px;
+      }
+      .lede {
+        margin: 0;
+        font-size: 17px;
+        color: var(--muted);
+      }
+      h2 {
+        font-size: 19px;
+        letter-spacing: -0.01em;
+        margin: 40px 0 12px;
+      }
+      h3 {
+        font-size: 16px;
+        margin: 26px 0 6px;
+      }
+      p,
+      li {
+        color: var(--muted);
+      }
+      p {
+        margin: 0 0 14px;
+      }
+      ul {
+        margin: 0 0 14px;
+        padding-left: 22px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      strong {
+        color: var(--text);
+        font-weight: 650;
+      }
+      a {
+        color: var(--accent-deep);
+        text-underline-offset: 2px;
+      }
+      .callout {
+        background: var(--accent-wash);
+        border: 1px solid var(--border);
+        border-left: 3px solid var(--accent);
+        border-radius: 12px;
+        padding: 18px 20px;
+        margin: 0 0 14px;
+      }
+      .callout p:last-child {
+        margin-bottom: 0;
+      }
+      footer {
+        margin-top: 56px;
+        padding-top: 28px;
+        border-top: 1px solid var(--border);
+        font-size: 14px;
+        color: var(--faint);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">TaxSet</p>
+        <h1>Support</h1>
+        <p class="lede">
+          Work out how much of what you earned belongs to the taxman — before you spend it.
+        </p>
+      </header>
+
+      <div class="callout">
+        <p>
+          <strong>TaxSet is an estimator, not tax advice.</strong> It multiplies your net profit by a
+          single rate that you choose. It models no brackets, deductions, credits, thresholds or
+          local rules. Check anything you intend to file with a qualified adviser in your
+          jurisdiction.
+        </p>
+      </div>
+
+      <h2>Getting in touch</h2>
+      <p>
+        The fastest route is <strong>Settings → Send feedback</strong> inside the app — it attaches
+        your app and OS version, which usually saves a round trip. It never attaches any of your
+        financial data.
+      </p>
+      <p>
+        Everything you send is read by the person who built TaxSet. Expect a reply within a few
+        days.
+      </p>
+
+      <h2>Common questions</h2>
+
+      <h3>Where is my data stored?</h3>
+      <p>
+        In a database inside the app's own private storage on your device, and nowhere else. There
+        is no account, no cloud and no sync. See the
+        <a href="./privacy.html">privacy policy</a> for the full picture.
+      </p>
+
+      <h3>How do I move my data to a new phone?</h3>
+      <p>
+        <strong>Settings → Export</strong> writes a JSON file and hands it to the share sheet — send
+        it to yourself however you like. On the new phone, use <strong>Import</strong> and pick that
+        file. CSV export is also available if you would rather open it in a spreadsheet.
+      </p>
+
+      <h3>How is the set-aside figure worked out?</h3>
+      <p>
+        Income minus expenses for the quarter gives your net profit; that is multiplied by the tax
+        rate you set in Settings. Nothing more clever than that is happening, deliberately — a
+        number you can check by hand is a number you can trust.
+      </p>
+
+      <h3>What rate should I use?</h3>
+      <p>
+        That depends entirely on where you live and what you earn, and it is exactly the question to
+        put to an accountant. TaxSet ships with a default and some common presets purely as starting
+        points, not recommendations.
+      </p>
+
+      <h3>I paid a tip but my unlocks are gone</h3>
+      <p>
+        Open <strong>Settings → Support TaxSet</strong> and tap <strong>Restore</strong>. Tips are
+        non-consumable purchases tied to your store account, so they survive a reinstall, a new
+        device and deleting all your data. Make sure you are signed in with the same Apple Account
+        or Google account you used to tip.
+      </p>
+
+      <h3>Do I have to tip to use the app?</h3>
+      <p>
+        No. Every calculation, every screen, export, import and all six main themes are free forever.
+        Tips unlock decoration only — extra themes, progress ring styles, particle effects and a
+        badge — and nothing already unlocked is ever taken back.
+      </p>
+
+      <h3>How do I delete everything?</h3>
+      <p>
+        <strong>Settings → Your data → Delete all data</strong>. It is immediate and irreversible,
+        so export first if there is any chance you will want it back. Deleting the app removes the
+        database too.
+      </p>
+
+      <h3>Does TaxSet work offline?</h3>
+      <p>Entirely. The only thing that needs a connection is sending feedback and leaving a tip.</p>
+
+      <footer>
+        <p><a href="./privacy.html">Privacy policy</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
