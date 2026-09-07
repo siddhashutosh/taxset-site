@@ -68,6 +68,21 @@
         font-weight: 600;
       }
       a:hover { border-color: var(--accent); }
+      a.primary {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: #fff;
+        font-size: 16px;
+        padding: 13px 26px;
+      }
+      a.primary:hover { filter: brightness(1.06); }
+      nav.secondary { margin-top: 14px; }
+      nav.secondary a {
+        border: none;
+        padding: 6px 10px;
+        font-weight: 500;
+        font-size: 14px;
+      }
     </style>
   </head>
   <body>
@@ -79,6 +94,9 @@
         bank linking, no analytics — your figures never leave your device.
       </p>
       <nav>
+        <a class="primary" href="https://apps.apple.com/app/id6806212810">Download on the App Store</a>
+      </nav>
+      <nav class="secondary">
         <a href="./privacy.html">Privacy policy</a>
         <a href="./support.html">Support</a>
       </nav>
